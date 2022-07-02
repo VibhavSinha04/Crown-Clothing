@@ -5,7 +5,7 @@ import {
   selectCartTotal,
 } from "../../store/cart/cart.selector";
 
-import CheckoutItem from "../../components/checkout-item/checkout-item.component";
+import CheckoutItems from "../../components/checkout-item/checkout-items.component";
 import PaymentForm from "../../components/payment-form/payment-form.component";
 
 import {
@@ -39,7 +39,7 @@ const Checkout = () => {
         </HeaderBlock>
       </CheckoutHeader>
       {cartItems.map((cartItem) => (
-        <CheckoutItem key={cartItem.id} cartItem={cartItem} />
+        <CheckoutItems key={cartItem.id} cartItem={cartItem} />
       ))}
       <Total>Total: ${cartTotal}</Total>
 
