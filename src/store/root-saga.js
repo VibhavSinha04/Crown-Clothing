@@ -1,11 +1,8 @@
-import { combineReducers } from "redux";
+import { all, call } from "redux-saga/effects";
 
-import { userReducer } from "./user/user.reducer";
-import { categoriesReducer } from "./categories/category.reducer";
-import { cartReducer } from "./cart/cart.reducer";
+import { categoriesSaga } from "./categories/category.saga";
+import { userSagas } from "./user/user.saga";
 
-export const rootReducer = combineReducers({
-  user: userReducer,
-  categories: categoriesReducer,
-  cart: cartReducer,
-});
+export function* rootSaga() {
+  yield all([call(categoriesSaga), call(userSagas)]);
+}
