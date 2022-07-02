@@ -40,7 +40,7 @@ const PaymentForm = () => {
 
     const paymentResult = await stripe.confirmCardPayment(clientSecret, {
       payment_method: {
-        pm_card_in: elements.getElement(CardElement),
+        card: elements.getElement(CardElement),
         billing_details: {
           name: currentUser ? currentUser.displayName : "Guest",
         },
