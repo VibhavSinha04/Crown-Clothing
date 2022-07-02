@@ -9,7 +9,7 @@ export const CheckoutContainer = styled.div`
   margin: 50px auto 0;
 `;
 
-export const Header = styled.div`
+export const CheckoutHeader = styled.div`
   width: 100%;
   padding: 10px 0;
   display: flex;
@@ -20,7 +20,6 @@ export const Header = styled.div`
 export const HeaderBlock = styled.div`
   text-transform: capitalize;
   width: 23%;
-
   &:last-child {
     width: 8%;
   }

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ProductCardContainer = styled.div`
+export const ProductCartContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -19,8 +19,6 @@ export const ProductCardContainer = styled.div`
     position: absolute;
     top: 255px;
     display: none;
-    font-size: 12px;
-    font-family: "Open Sans", sans-serif;
   }
   &:hover {
     img {

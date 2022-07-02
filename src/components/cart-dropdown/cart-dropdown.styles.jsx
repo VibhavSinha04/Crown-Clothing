@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 import {
-  BaseButon,
+  BaseButton,
   GoogleSignInButton,
   InvertedButton,
 } from "../button/button.styles";
@@ -18,13 +18,10 @@ export const CartDropdownContainer = styled.div`
   top: 90px;
   right: 40px;
   z-index: 5;
-
-  ${BaseButon},
+  ${BaseButton},
   ${GoogleSignInButton},
   ${InvertedButton} {
     margin-top: auto;
-    font-size: 12px;
-    font-family: "Open Sans", sans-serif;
   }
 `;
 
@@ -37,23 +34,5 @@ export const CartItems = styled.div`
   height: 240px;
   display: flex;
   flex-direction: column;
-  overflow-y: auto;
-  &::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    background-color: #f5f5f5;
-  }
-
-  &::-webkit-scrollbar {
-    width: 12px;
-    background-color: #f5f5f5;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    background-color: #333;
-  }
+  overflow: scroll;
 `;
