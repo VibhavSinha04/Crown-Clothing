@@ -14,6 +14,7 @@ export const ItemDetails = styled.div`
   width: 70%;
   display: flex;
   flex-direction: column;
+  font-weight: bolder;
   align-items: flex-start;
   justify-content: center;
   padding: 10px 20px;

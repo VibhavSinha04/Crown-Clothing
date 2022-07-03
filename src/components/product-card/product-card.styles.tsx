@@ -37,6 +37,7 @@ export const Footer = styled.div`
   display: flex;
   justify-content: space-between;
   font-size: 18px;
+  font-weight: bolder;
 `;
 
 export const Name = styled.span`

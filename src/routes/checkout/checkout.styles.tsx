@@ -29,4 +29,5 @@ export const Total = styled.span`
   margin-top: 30px;
   margin-left: auto;
   font-size: 36px;
+  font-weight: bolder;
 `;
