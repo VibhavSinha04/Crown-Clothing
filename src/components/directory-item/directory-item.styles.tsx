@@ -25,7 +25,7 @@ export const Body = styled.div`
   position: absolute;
   h2 {
     font-weight: bold;
-    margin: 0 6px 0;
+    margin-bottom: 6px;
     font-size: 22px;
     color: #4a4a4a;
     text-transform: uppercase;
@@ -61,5 +61,9 @@ export const DirectoryItemContainer = styled.div`
     ${Body} {
       opacity: 0.9;
     }
+  }
+
+  @media screen and (max-width: 800px) {
+    height: 200px;
   }
 `;

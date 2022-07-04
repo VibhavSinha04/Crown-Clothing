@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-export const ProductCartContainer = styled.div`
-  width: 100%;
+export const ProductCardContainer = styled.div`
+  width: 22vw;
   display: flex;
   flex-direction: column;
   height: 350px;
@@ -11,6 +11,7 @@ export const ProductCartContainer = styled.div`
     width: 100%;
     height: 95%;
     object-fit: cover;
+    background-position: center;
     margin-bottom: 5px;
   }
   button {
@@ -19,6 +20,13 @@ export const ProductCartContainer = styled.div`
     position: absolute;
     top: 255px;
     display: none;
+
+    @media screen and (max-width: 800px) {
+      display: block;
+      opacity: 0.9;
+      min-width: unset;
+      padding: 0 10px;
+    }
   }
   &:hover {
     img {
@@ -27,6 +35,19 @@ export const ProductCartContainer = styled.div`
     button {
       opacity: 0.85;
       display: flex;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 40vw;
+
+    &:hover {
+      img {
+        opacity: unset;
+      }
+      button {
+        opacity: unset;
+      }
     }
   }
 `;
@@ -47,4 +68,5 @@ export const Name = styled.span`
 
 export const Price = styled.span`
   width: 10%;
+  text-align: right;
 `;
