@@ -6,7 +6,7 @@ type BackgroundImageProps = {
 
 export const BackgroundImage = styled.div<BackgroundImageProps>`
   width: 100%;
-  height: 100%;
+  height: 150%;
   background-size: cover;
   background-position: center;
   background-image: ${({ imageUrl }) => `url(${imageUrl})`};
@@ -38,7 +38,7 @@ export const Body = styled.div`
 
 export const DirectoryItemContainer = styled.div`
   min-width: 30%;
-  height: 240px;
+  height: 340px;
   flex: 1 1 auto;
   display: flex;
   align-items: center;
